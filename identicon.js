@@ -168,8 +168,9 @@
 
             xml = "<svg xmlns='http://www.w3.org/2000/svg'"
                 + " width='" + this.size + "' height='" + this.size + "'"
-                + " style='background-color:" + bg + ";'>"
-                + "<g style='fill:" + fg + "; stroke:" + fg + "; stroke-width:" + stroke + ";'>";
+                + " viewBox='0 0 " + this.size + " " + this.size + "'>"
+                + "<rect fill='" + bg + "' width='100%' height='100%' />"
+                + "<g fill='" + fg + "'" + " stroke='" + fg + "'" + " strokeWidth='" + stroke + "'>";
 
             for (i = 0; i < this.rectangles.length; i++) {
                 rect = this.rectangles[i];
